@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+
+
+<link rel="stylesheet" type="text/css" href="Zoo.css">
+
+
+
+<title>
+Contact Us	
+</title>
+</head>
+
+
+<body>
+<ul>
+<li>
+<a href="Index.html">Home</a>
+</li>
+
+<li>
+<a href="About-Us.html">About Us</a>
+</li>
+
+<li>
+<a href="Contact-Us.html">Contact Us</a>
+</li>
+
+
+<li>
+<a href="Animal-Information.html">Animal Info</a>
+</li>
+
+
+
+<li>
+<a href="Birds-Information.html">Birds Info</a>
+</li>
+
+
+<li>
+<a href="Timings.html">Timings</a>
+</li>
+
+
+
+<li>
+<a href="Future-events.html">Future events</a>
+</li>
+
+<li class="last">
+<a href="registration.php">Registration</a>
+</li>
+
+<li class="last">
+<a href="login.php">Login</a>
+</li>
+
+
+</ul>
+
+<p>
+<img src="Images/Zoo.PNG" class="image2">
+</p>
+
+
+<p><Strong>We are located at Laurinska 14, Bratislava I.</Strong>
+</p>
+
+
+<h2>Where you can find us!</h2>
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var uluru = {lat: 48.143636, lng: 17.111151};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 15,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAdn6_NariRyuJPYn0rB1_mLMBVnjESsYg&callback=initMap">
+    </script>
+
+<p><strong> Leave us feedback! </strong></p>
+<div id="contact">
+<form action="sendmail2.php" method="post">
+	Your name<br>
+    <input type="text1" name="cf_name"><br>
+	Your e-mail<br>
+    <input type="text1" name="cf_email"><br>
+	Message<br>
+    <textarea name="cf_message"></textarea><br>
+	<input type="submit" value="Send">
+	<input type="reset" value="Clear">
+</form>
+</div>
+
+
+
+
+
+
+
+<div id="contact">
+<form action="http://localhost/sendmail3.php" method="post">
+  Your name<br>
+    <textarea name="cf_name"></textarea><br>
+  Your e-mail<br>
+    <textarea name="cf_email"></textarea><br>
+  Message<br>
+    <textarea name="cf_message"></textarea><br>
+  <input type="submit" value="Send">
+  <input type="reset" value="Clear">
+</form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
